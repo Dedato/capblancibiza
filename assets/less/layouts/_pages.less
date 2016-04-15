@@ -1,0 +1,48 @@
+.page-header {
+    border:none;
+    margin:0;
+    padding-bottom:0;
+}
+// Image Gallery
+.gallery {
+  position:relative;
+  display:block;
+  .images {
+    list-style:none;
+    margin:0;
+    padding:0;
+    li {
+      a {
+        position:relative;
+        display:block;
+        .enlarge {
+          position:absolute;
+          top:0;
+          right:0;
+          color:#fff;
+        	text-align:center;
+          width:30px;
+          height:30px;
+          line-height:30px;
+          background:rgba(0,0,0,0.5);
+          .lt-ie9 & {background:#000; }
+          .transition(opacity 0.5s ease);
+          .opacity(0.6);
+        }
+        &:hover,
+        &:focus {
+          .enlarge {.opacity(1);}
+        }
+        img {
+          width:100%;
+          height:auto;
+        }
+      }
+    }
+  }
+}
+// Location Template
+.location {
+  padding:0;
+  iframe {display:block;}
+}

@@ -1,0 +1,40 @@
+/* Typography */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top:0;
+  margin-bottom:0.5em;
+  font-style:italic;
+  text-transform:lowercase; 
+  letter-spacing:1px;
+}
+
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {color:@gray-dark; }
+
+p {
+  margin: 0 0 1em;
+}
+
+/* Select Highlight */
+::selection {background:@link-hover-color !important; color:#FFF; text-shadow:none} /* Selection background & text color */
+::-moz-selection {background:@link-hover-color !important; color:#FFF; text-shadow:none} /* Selection background & text color Firefox */
+::-webkit-selection {background:@link-hover-color !important; color:#FFF; text-shadow:none} /* Selection background & text color iOS */
+
+/* Lists */
+ul, ol {
+  list-style:inside circle;
+  margin:0 0 10px (@grid-gutter-width / 2);
+  padding:0;
+}
+
+/* Images */
+img {
+  .img-responsive();
+}
